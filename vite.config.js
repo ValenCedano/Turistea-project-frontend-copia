@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:'https://makaiabootcamp.github.io/Turistea-project-frontend-7'
-})
+  build: {
+    chunkSizeWarningLimit: 1000, // Increase the chunk size warning limit to 1000 kB
+  },
+});
