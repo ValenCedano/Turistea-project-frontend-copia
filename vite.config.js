@@ -6,5 +6,5 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1000, // Adjust as necessary
   },
-  base: '/Turistea-project-frontend-copia/',
+  base: '/Turistea-project-frontend-copia/', // Ensure this matches your repository name
 });
